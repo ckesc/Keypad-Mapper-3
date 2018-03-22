@@ -23,7 +23,7 @@ jdk:
   - oraclejdk8
 
 install: true
-script: cd KeypadMapper3 && ./gradlew assembleDebug --continue
+script: cd KeypadMapper3 && ./gradlew assembleDebug --continue && cd ..
 
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
